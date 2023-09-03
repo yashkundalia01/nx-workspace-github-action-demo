@@ -5,7 +5,8 @@
   "scripts": {
     "commit": "commit",
     "ng": "nx",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version": "node ./scripts/update-peerDependencies"
   },
   "private": true,
   "dependencies": {
@@ -22,8 +23,10 @@
     "@commitlint/prompt-cli": "^17.7.1",
     "@nx/angular": "16.7.4",
     "@storybook/addon-a11y": "^7.4.0",
+    "fs-extra": "^11.1.1",
     "husky": "^8.0.3",
     "lerna": "^6.6.1",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "~7.8.0",
@@ -75,7 +78,8 @@
     "ts-node": "10.9.1",
     "typescript": "~5.1.3"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "engines": {
+    "node": "^18.17.1",
+    "npm": "^9.6.7"
+  }
 }
