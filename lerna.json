@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "libs/*"
+  ],
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "conventionalCommits": true,
+  "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
+  "ignoreChanges": ["**/_fixtures_/**", "**/_tests_/**", "**/*.md"],
+  "useWorkspaces": true,
+  "version": "8.0.0",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "yes": true,
+      "allowBranch": ["PUBLISH-*", "HOTFIX-*"]
+    },
+    "version": {
+      "message": "chore(release): publish %s",
+      "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
+      "yes": true
+    }
+  }
+}
