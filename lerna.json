@@ -3,7 +3,7 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "conventionalCommits": true,
   "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
-  "version": "23.12.3",
+  "version": "23.13.0",
   "command": {
     "publish": {
       "conventionalCommits": true,
