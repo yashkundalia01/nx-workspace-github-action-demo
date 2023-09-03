@@ -10,7 +10,7 @@ env:
 
 jobs:
   publish:
-    runs-on: [self-hosted, linux, x64, AWS-EKS-runner-non-prod]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repo
