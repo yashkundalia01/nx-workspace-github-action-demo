@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.13.0](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.12.3...v23.13.0) (2023-09-03)
+
+### Features
+
+- **components:** introduce new button component ([59abc34](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/59abc348f006bf76af73b76d10bd73e3c1cf1f9f))
+
 ## [23.12.3](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.12.2...v23.12.3) (2023-09-03)
 
 **Note:** Version bump only for package @nx-workspace-demo/source
