@@ -5,7 +5,7 @@
   "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
   "ignoreChanges": ["**/_fixtures_/**", "**/_tests_/**", "**/*.md"],
   "useWorkspaces": true,
-  "version": "8.0.0",
+  "version": "23.8.0",
   "command": {
     "publish": {
       "conventionalCommits": true,
