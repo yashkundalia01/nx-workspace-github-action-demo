@@ -46,6 +46,53 @@
           "libs/grid/package.json"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/grid/.storybook",
+        "browserTarget": "grid:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/grid",
+        "configDir": "libs/grid/.storybook",
+        "browserTarget": "grid:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c libs/grid/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "grid:build-storybook",
+        "staticFilePath": "dist/storybook/grid"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "grid:build-storybook:ci"
+        }
+      }
     }
   }
 }
