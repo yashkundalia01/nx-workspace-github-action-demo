@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.12.0](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.11.1...v23.12.0) (2023-09-04)
+
+**Note:** Version bump only for package @nx-workspace-demo/grid
+
 ## [23.11.1](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.11.0...v23.11.1) (2023-09-03)
 
 ### Bug Fixes
