@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Git user config
-        run: | 
+        run: |
           git config --global user.email "<>"
           git config --global user.name "github-ci"
       - name: Show Git refs
