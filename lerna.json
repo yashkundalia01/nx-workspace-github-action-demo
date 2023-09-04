@@ -2,8 +2,7 @@
   "packages": ["libs/*"],
   "conventionalCommits": true,
   "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
-  "ignoreChanges": ["**/_fixtures_/**", "**/_tests_/**", "**/*.md"],
-  "version": "23.8.0",
+  "version": "23.12.2",
   "command": {
     "publish": {
       "conventionalCommits": true,
