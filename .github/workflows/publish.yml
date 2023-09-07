@@ -1,0 +1,56 @@
+name: Publish NPM Packages
+
+on:
+  push:
+    branches:
+      - PUBLISH-*
+      - HOTFIX-*
+env:
+  BASE_BRANCH: refs/remotes/origin/master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Git user config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "github-ci"
+      - name: Show Git refs
+        run: git show-ref
+      - name: Current branch
+        run: echo ${GITHUB_REF}
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Set variable based on branch name
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/"* ]]; then
+            BRANCH_NAME="${{ github.ref }}"
+            BRANCH_NAME=${BRANCH_NAME#refs/heads/}
+            if [[ $BRANCH_NAME == "HOTFIX-"* ]]; then
+              echo "Setting VERSION_BUMP to 'patch'"
+              echo "VERSION_BUMP=patch" >> $GITHUB_ENV
+            else
+              echo "Setting VERSION_BUMP to 'minor'"
+              echo "VERSION_BUMP=minor" >> $GITHUB_ENV
+            fi
+          fi
+
+      - name: Install Dependencies
+        run: npm ci --force
+
+      - name: Version Packages
+        run: npx lerna version ${VERSION_BUMP} --yes --conventional-commits --exact --force-publish --no-commit-hooks
+
+      - name: Build applications and libraries
+        run: npx nx run-many --target=build --all
