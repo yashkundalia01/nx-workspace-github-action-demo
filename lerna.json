@@ -1,6 +1,5 @@
 {
   "packages": ["libs/*"],
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "conventionalCommits": true,
   "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
   "version": "23.13.0",
