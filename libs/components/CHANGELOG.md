@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [23.14.1](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.14.0...v23.14.1) (2023-11-05)
+
+### Bug Fixes
+
+- **components:** fixed a11y issue of the alert ([ac85447](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/ac85447f8a9d89c4e901576f03373eba7b043898))
+
 # [23.14.0](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.13.0...v23.14.0) (2023-11-05)
 
 ### Bug Fixes
