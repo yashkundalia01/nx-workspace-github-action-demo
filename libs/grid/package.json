@@ -1,10 +1,10 @@
 {
   "name": "@nx-workspace-demo/grid",
-  "version": "23.13.0",
+  "version": "23.14.0",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0",
-    "@nx-workspace-demo/components": "23.13.0"
+    "@nx-workspace-demo/components": "23.14.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
