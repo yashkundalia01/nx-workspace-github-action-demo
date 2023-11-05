@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.14.0](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.13.0...v23.14.0) (2023-11-05)
+
+### Bug Fixes
+
+- **components:** fix accessibility issues of grid component ([1adb893](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/1adb89345b1812008b7308d2cd726e7b547eb20a))
+- **grid:** fix accessibility issue of ag grid ([d5bf38b](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/d5bf38bf78a4b883d5dcc10b42c40ab4c9f6a9c6))
+- **grid:** fix small font size issue ([874858a](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/874858a18d8918cb3de0af5e27293cca30a122ff))
+- **grid:** fix small font size issue in ag grid ([da1a933](https://github.com/yashkundalia01/nx-workspace-github-action-demo/commit/da1a93305b8ac51f035a9dca0b13a48ade90f366))
+
 # [23.13.0](https://github.com/yashkundalia01/nx-workspace-github-action-demo/compare/v23.12.3...v23.13.0) (2023-09-03)
 
 **Note:** Version bump only for package @nx-workspace-demo/grid
