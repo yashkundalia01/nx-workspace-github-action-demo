@@ -1,5 +1,5 @@
 {
-  "packages": ["libs/*"],
+  "packages": ["libs/components", "libs/grid"],
   "conventionalCommits": true,
   "allowBranch": ["PUBLISH-*", "HOTFIX-*"],
   "version": "23.13.0",
