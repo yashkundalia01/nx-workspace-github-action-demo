@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-workspace-demo/audit": ["libs/audit/src/index.ts"],
       "@nx-workspace-demo/components": ["libs/components/src/index.ts"],
       "@nx-workspace-demo/grid": ["libs/grid/src/index.ts"]
     }
